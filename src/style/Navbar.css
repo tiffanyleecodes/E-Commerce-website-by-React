@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background-color: #f7f4f2;
+  align-items: center;
+  height: 3.5rem;
+  width: 100vw;
+}
+
+.logo a {
+  text-decoration: none;
+  color: black;
+}
+.shopname {
+  font-size: 1.3rem;
+  letter-spacing: 0.2rem;
+}
+
+.shopname:hover {
+  cursor: pointer;
+}
+
+.menu ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu ul li,
+.hiddenMenu li {
+  list-style: none;
+}
+
+.menu ul li a,
+.hiddenMenu li a {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.6rem;
+  font-weight: 500;
+}
+
+.menu ul li a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
+
+.Hamburger {
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.Hamburger:hover {
+  cursor: pointer;
+}
+.hiddenMenu {
+  display: none;
+}
+
+.hiddenMenu ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-left: -3rem;
+}
+
+.hiddenMenu ul li a {
+  font-size: 0.9rem;
+}
+
+.hiddenMenu ul li a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+  padding-bottom: 0.6rem;
+}
+
+#open .hiddenMenu {
+  display: flex;
+}
+
+#open h1 {
+  display: none;
+}
+
+@media (max-width: 430px) {
+  .menu {
+    display: none;
+  }
+
+  .Hamburger {
+    display: block;
+  }
+}

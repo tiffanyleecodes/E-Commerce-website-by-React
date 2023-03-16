@@ -1,0 +1,77 @@
+.contact {
+  box-sizing: border-box;
+}
+
+.contact h1 {
+  text-align: left;
+}
+
+.contactContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: auto;
+}
+.leftImage {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  margin: auto 0rem;
+  padding: 0 5rem;
+}
+
+hr {
+  margin: 2rem 0;
+}
+
+.text input {
+  width: 80%;
+  margin: 1rem 0;
+}
+
+.text button {
+  margin: 1rem 0;
+
+  background-color: transparent;
+  border: 1px solid rgb(153, 52, 52);
+  color: indianred;
+  padding: 0.7rem 2rem;
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.2rem;
+  font-weight: 700;
+  width: 50%;
+  text-transform: uppercase;
+}
+.text button:hover {
+  cursor: pointer;
+  background-color: indianred;
+  color: white;
+  border: none;
+}
+
+@media (max-width: 430px) {
+  .contactContent {
+    grid-template-columns: 1fr;
+  }
+
+  .text {
+    margin: 3rem 0;
+  }
+  .leftImage {
+    height: 70vh;
+    grid-row: 1;
+  }
+  .contact h1 {
+    text-align: center;
+    margin-left: 0rem;
+  }
+
+  .text button {
+    width: 70%;
+  }
+}
